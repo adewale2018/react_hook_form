@@ -1,17 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
-import NewForm from './NewForm';
+import MultiStepForm from './components/MultiStepForm';
+import AccountSetup from './components/AccountSetup';
 import './App.css';
 
-function App() {
-  return (
+class App extends React.Component {
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <NewForm />
-      </header>
+      <MultiStepForm />
     </div>
   );
+  }
+  
 }
 
 export default App;

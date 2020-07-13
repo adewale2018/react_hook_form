@@ -26,9 +26,8 @@ const NewForm = () => {
       placeholder="Password" 
       name="password" 
       ref={register({
-        required: "INVALID PASSWORD",
+        required: "PASSWORD TOO SHORT",
         minLength: 8,
-        maxLength: 12
       })} 
       
     />
